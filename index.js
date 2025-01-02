@@ -36,7 +36,7 @@ console.log(`
 // [========================================] //
 async function scrapeProxy() {
   try {
-    const response = await fetch('https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt');
+    const response = await fetch('https://raw.githubusercontent.com/mixc2/ddos-js/refs/heads/main/proxy.txt');
     const data = await response.text();
     fs.writeFileSync('proxy.txt', data, 'utf-8');
   } catch (error) {
@@ -46,7 +46,7 @@ async function scrapeProxy() {
 // [========================================] //
 async function scrapeUserAgent() {
   try {
-    const response = await fetch('https://gist.githubusercontent.com/pzb/b4b6f57144aea7827ae4/raw/cf847b76a142955b1410c8bcef3aabe221a63db1/user-agents.txt');
+    const response = await fetch('https://raw.githubusercontent.com/mixc2/ddos-js/refs/heads/main/ua.txt');
     const data = await response.text();
     fs.writeFileSync('ua.txt', data, 'utf-8');
   } catch (error) {
